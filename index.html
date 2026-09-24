@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nome e idade</title>
+    <style>
+        body{
+            background-color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div{
+            box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+            width: 300px;
+            height: 165px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        button{
+            background-color: #ff0000;
+            box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+            border-style: none;
+            border-radius: 10px;
+            text-align: center;
+            width: 106px;
+            height: 22px;
+        }
+
+        button:hover{
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Olá tudo bem</h1>
+            <p>não tem nada de mais nesse site</p>
+            <button onclick="window.close()">Fecha Página</button>
+        </div>
+    </main>
+
+    <script>
+        let nome = window.prompt('Qual é o seu nome')
+        let idade = window.prompt('qual é sua idade')
+        window.alert('Olá sejá bem-vindo, ' + nome + ', você tem ' + idade + 'anos!')
+    </script>
+</body>
+</html>
